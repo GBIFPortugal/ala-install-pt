@@ -1,0 +1,13 @@
+- hosts: ala-demo
+  roles:
+    - common
+    - java
+    - tomcat
+    - apache
+    - nameindex
+    - biocache-properties
+    - biocache-service
+    - { role: biocache-hub, biocache_hub: generic-hub }
+    - biocache-cli
+    - nameindexer
+    - demo
