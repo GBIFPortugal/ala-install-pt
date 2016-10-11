@@ -1,0 +1,93 @@
+[ala-demo]
+metadados.gbif.pt
+
+[ala-demo:vars]
+is_vagrant=true
+local_repo_dir = ~/.ala
+data_dir=/data
+
+demo_hostname = metadados.gbif.pt
+
+####################### Collectory #######################
+
+collectory_app = generic-collectory
+collectory_hostname = metadados.gbif.pt
+collectory_url = http://metadados.gbif.pt/collectory
+collectory_base_url = http://metadados.gbif.pt
+collectory_context_path = /collectory
+collectory_db_host_address = localhost
+collectory_db_host = localhost
+collectory_db_user = collectory
+collectory_db_password = 2016collect32
+
+orgNameLong = Portal de Dados de Biodiversidade de Portugal
+orgNameShort = Portugal
+
+# CAS
+uri_filter_pattern = /dummy
+
+# Security bypass
+security_bypass = true
+
+# External API access
+api_key= to_be_added
+
+# Skinning
+skin = generic-pt
+
+# Map config
+collections_map_lat = 39.503023
+collections_map_lon = -8.814473
+collections_map_zoom = 5
+
+# Project name
+orgNameShort = Portugal
+orgNameLong = Portal de Dados de Biodiversidade de Portugal
+region = Portugal
+
+# EML config
+eml_delivery_point = Serras de Aire e Candeeiros
+eml_city =
+eml_admin_area = Portugal
+eml_postal_code =
+eml_country = Portugal
+
+# Disable UI components
+disable_map = true
+disable_alerts = true
+disable_logger = false
+
+# Whether to check API keys for incoming write requests
+api_key_check_enabled = false
+
+# GBIF base URL for webservices
+gbifApiUrl=http://api.gbif.org/v1
+
+# Logger URL
+logger_webservice_url = http://metadados.gbif.pt/logger-service/service
+
+# Biocache integration
+biocache_hub_url=http://192.92.149.79/generic-hub
+biocache_service_url=http://192.92.149.79/biocache-service
+
+################# Logger Service ############
+
+logger_hostname = metadados.gbif.pt
+logger_url = http://metadados.gbif.pt/logger-service
+logger_base_url = http://metadados.gbif.pt
+logger_context_path = /logger-service
+logger_db_name = logger
+logger_db_username = logger_user
+logger_db_password = logger_user
+logger_db_hostname = localhost
+
+
+############### Auth Server #########
+auth_base_url=https://auth.ala.org.au
+auth_cas_url=https://auth.ala.org.au/cas
+
+####### When near the GBIF building (e.g. in Europe) the GBIF nexus will likely be fastest #########
+use_gbif_nexus=true
+
+####### Disable SDS checks for the demo
+sds_enabled=false

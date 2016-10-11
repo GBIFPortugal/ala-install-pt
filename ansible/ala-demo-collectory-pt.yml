@@ -1,0 +1,10 @@
+- hosts: ala-demo
+  roles:
+    - common
+    - java
+    - tomcat
+    - mysql
+    - apache
+    - logger-client
+    - collectory
+    - logger-service
