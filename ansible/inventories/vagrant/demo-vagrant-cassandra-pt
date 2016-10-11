@@ -1,0 +1,14 @@
+[ala-demo]
+192.92.149.134
+
+[ala-demo:vars]
+is_vagrant=true
+local_repo_dir = ~/.ala
+data_dir=/data
+
+demo_hostname = 192.92.149.134
+
+####################### Biocache #######################
+
+biocache_db_host = 192.92.149.134
+cassandra_listen_host = 192.92.149.134
